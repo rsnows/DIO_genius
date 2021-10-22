@@ -39,6 +39,7 @@ let lightColor = (element, number) => {
 let checkOrder = () => {
 	for(let i in clickedOrder) {
 		if(clickedOrder[i] != order[i]) {
+			document.getElementById('end').play();
 			gameOver();
 			break;
 		}
